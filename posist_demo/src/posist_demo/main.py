@@ -1,5 +1,7 @@
 import argparse
+
 from databricks.sdk.runtime import spark
+
 from posist_demo import taxis
 
 

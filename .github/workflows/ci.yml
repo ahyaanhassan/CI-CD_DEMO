@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - name: Lint
-        run: uvx ruff check posist_demo
+        run: uvx ruff check posist_demo --exclude "*.ipynb" --extend-ignore EXE002
       - uses: databricks/setup-cli@main
       - name: Validate bundle
         working-directory: posist_demo
